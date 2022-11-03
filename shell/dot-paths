@@ -1,0 +1,55 @@
+# $HeadURL: https://www.crylle.net/svn/pub/env/trunk/.paths $
+# $Date: 2013-03-06 16:19:35 +0000 (Mi, 06 Mär 2013) $
+# $Author: holm $
+#
+
+# std PATH
+#
+preList PATH /usr/games
+preList PATH /stand
+preList PATH /sbin
+preList PATH /usr/sbin
+preList PATH /usr/local/sbin
+preList PATH /usr/pkg/sbin
+preList PATH /bin
+preList PATH /usr/bin
+preList PATH /usr/local/bin
+preList PATH /usr/pkg/bin
+
+appList MANPATH /usr/share/man
+appList MANPATH /usr/man
+appList MANPATH /usr/local/man
+appList MANPATH /usr/pkg/man
+
+# std X11-PATH
+#
+preList PATH /usr/X11R6/bin
+preList PATH /usr/openwin/bin
+preList PATH /usr/X/bin
+preList PATH /usr/dt/bin
+
+appList MANPATH /usr/X11R6/man
+
+# fink on mac os x
+#
+preList PATH /sw/bin
+preList PATH /sw/sbin
+
+#addon solaris
+#
+appList PATH /usr/proc/bin
+appList PATH /usr/ucb
+appList PATH /usr/ccs/bin
+appList PATH /usr/java/bin
+
+# my home
+#
+preList PATH $HOME/bin
+preList PATH $HOME/run/$_OS/bin
+preList LD_LIBRARY_PATH $HOME/run/$_OS/lib
+preList MANPATH $HOME/run/$_OS/man
+preList PERLLIB $HOME/run/perl
+
+# rancid
+#
+appList PATH /var/lib/rancid/bin
