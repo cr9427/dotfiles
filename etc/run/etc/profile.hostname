@@ -1,0 +1,41 @@
+# $HeadURL: https://www.crylle.net/svn/pub/env/trunk/run/etc/profile.hostname $
+# $Date: 2013-03-05 15:03:41 +0000 (Di, 05 Mär 2013) $
+# $Author: holm $
+#
+
+# aliases
+#
+#source $HOME/.aliases.apt
+#source $HOME/.aliases.gnu-fileutils
+#
+#alias s=sudo
+#alias svi='sudo vim'
+#alias apt='sudo aptitude'
+
+# automake
+#
+#CONFIG_SITE=$HOME/run/etc/config.site
+#export CONFIG_SITE
+
+# CVS Server Settings
+#
+#CVSROOT=":pserver:holm@localhost:/usr/home/cvs"
+#export CVSROOT
+
+# NNTPSERVER
+#
+#NNTPSERVER=news
+#export NNTPSERVER
+
+# Proxys
+#
+#no_proxy=localhost
+#export no_proxy
+#http_proxy=`cat /etc/proxy.conf`
+#HTTP_PROXY=$http_proxy
+#export http_proxy HTTP_PROXY
+#https_proxy=http://localhost:3128/
+#ftp_proxy=ftp://localhost:3128/
+#HTTP_PROXY_AUTH
+#export http_proxy https_proxy ftp_proxy
+#export HTTP_PROXY_AUTH
