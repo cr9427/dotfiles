@@ -166,8 +166,13 @@ chflags nohidden ~/Library
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Set Dock autohide
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock magnification -bool true
+
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 16
+defaults write com.apple.dock largesize -int 112
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.15
