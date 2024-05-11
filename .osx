@@ -60,7 +60,8 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Set background
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Stone.png"'
+#osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Stone.png"'
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "${HOME}/Library/Mobile\ Documents/com\~apple\~CloudDocs/Pictures/Desktop/PropVol62b.jpg"'
 
 # Set focus follow mouse for Terminal.app
 defaults write com.apple.terminal FocusFollowsMouse -string true
