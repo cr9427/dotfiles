@@ -66,6 +66,9 @@ osascript -e 'tell application "Finder" to set desktop picture to POSIX file "${
 # Set focus follow mouse for Terminal.app
 defaults write com.apple.terminal FocusFollowsMouse -string true
 
+# show clock with seconds in menu
+defaults write com.apple.menuextra.clock ShowSeconds  -int 1 
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
