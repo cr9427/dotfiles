@@ -70,6 +70,16 @@ defaults write com.apple.terminal FocusFollowsMouse -string true
 defaults write com.apple.menuextra.clock ShowSeconds  -int 1 
 
 ###############################################################################
+# Screensaver                                                                 #
+###############################################################################
+
+# Screensaver Immediate Lock
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Screensaver Password
+defaults write com.apple.screensaver askForPassword -int 1
+
+###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
