@@ -9,6 +9,8 @@ alias tf='tail -f'
 alias tt='telnet'
 alias mtr='mtr --curses'
 alias yamllint='yamllint -d ~/.yamllint.conf'
+alias l='ls -la'
+alias ll='ls -l'
 
 alias stowth='stow --dotfiles --verbose --stow --target ~/'
 alias unstowth='stow --dotfiles --verbose --delete --target ~/'
