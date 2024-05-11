@@ -69,6 +69,8 @@ defaults write com.apple.terminal FocusFollowsMouse -string true
 # show clock with seconds in menu
 defaults write com.apple.menuextra.clock ShowSeconds  -int 1 
 
+# Disable the "Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 ###############################################################################
 # Screensaver                                                                 #
 ###############################################################################
