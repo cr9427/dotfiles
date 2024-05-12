@@ -48,4 +48,4 @@ Temporary Items
 .apdisk
 
 # ---> my
-stow/mc/.config/mc/ini
+**/mc/ini
