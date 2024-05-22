@@ -3,7 +3,7 @@
   email = hk@crylle.net
 [core]
   editor = vi
-  excludesfile = ~/.gitignore
+	excludesFile = /Users/holm/.gitignore
   autocrlf = input
 [color]
   branch = auto
@@ -32,3 +32,9 @@
   l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
 [pull]
 	rebase = true
+[diff]
+	submodule = log
+[status]
+	submodulesummary = 1
+[submodule]
+	recurse = true
