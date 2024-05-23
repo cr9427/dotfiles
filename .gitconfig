@@ -3,7 +3,7 @@
   email = hk@crylle.net
 [core]
   editor = vi
-	excludesFile = /Users/holm/.gitignore
+	excludesFile = ~/.gitignore
   autocrlf = input
 [color]
   branch = auto
