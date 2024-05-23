@@ -49,3 +49,7 @@ Temporary Items
 
 # ---> my
 **/mc/ini
+
+# ---> .env
+.env
+.dotenv
