@@ -38,3 +38,5 @@
 	submodulesummary = 1
 [submodule]
 	recurse = true
+[url "git@github.com:cr9427"]
+  insteadOf = "https://github.com/cr9427"
