@@ -12,5 +12,9 @@ if [ -f $HOME/.zshrc ]; then
   mv $HOME/.zshrc $HOME/.zshrc.old
 fi
 
+if [ -f $HOME/.zshrc ]; then
+  mv $HOME/.zshrc $HOME/.zshrc.old
+fi
+
 cd $HOME/work/GitHub/dotfiles/stow
 stow --dotfiles --verbose --stow --target ~/ *
