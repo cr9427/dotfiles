@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 mkdir -p $HOME/work/GitHub
-git clone https://github.com/cr9427/dotfiles.git $HOME/work/GitHub/dotfiles
+git clone https://github.com/cr9427/dotfiles.git $HOME/work/GitHub/dotfiles --recursive
 
 export KEEP_ZSHRC=yes
 export CHSH=no
