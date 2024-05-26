@@ -18,3 +18,6 @@ fi
 
 cd $HOME/work/GitHub/dotfiles/stow
 stow --dotfiles --verbose --stow --target ~/ *
+
+cd
+exec zsh
