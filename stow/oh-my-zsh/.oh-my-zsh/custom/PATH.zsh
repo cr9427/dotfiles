@@ -1,2 +1,2 @@
-preList $HOME/run/$OS/bin
-preList $HOME/bin
+preList PATH $HOME/run/$OS/bin
+preList PATH $HOME/bin
