@@ -2,7 +2,7 @@
 #
 echo ""
 export HOST=`hostname -s`
-echo "HOST   is $HOST"
+echo "HOST:    $HOST"
 
 # determine OS
 #
@@ -10,17 +10,17 @@ if [ -x $HOME/bin/config.guess ]; then
    OS=`$HOME/bin/config.guess`
 fi
 if [ x$OS = x ]; then
-        echo "OS    is not detectable ... update $HOME/bin/config.guess"
+        echo "OS:      not detectable ... update $HOME/bin/config.guess"
 else
-        echo "OS    is $OS"
+        echo "OS       $OS"
         export OS
 fi
 
 # determine HOME
 #
-echo  "home  is $HOME"
+echo  "home:    $HOME"
 
 # determine SHELL
 #
-echo "shell is $SHELL"
+echo "shell:   $SHELL"
 echo
