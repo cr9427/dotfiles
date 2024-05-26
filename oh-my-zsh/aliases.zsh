@@ -1,3 +1,9 @@
+# source aliases
+#
+if [ -f $HOME/.aliases ]; then
+   . $HOME/.aliases
+fi
+
 alias sa='alias | fzf'
 alias se='printenv | fzf'
 alias s=sudo
