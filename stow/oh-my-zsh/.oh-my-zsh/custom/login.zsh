@@ -1,9 +1,14 @@
+# set hostname to $HOST
+#
+echo ""
+export HOST=`hostname -s`
+echo "HOST   is $HOST"
+
 # determine OS
 #
 if [ -x $HOME/bin/config.guess ]; then
    OS=`$HOME/bin/config.guess`
 fi
-echo ""
 if [ x$OS = x ]; then
         echo "OS    is not detectable ... update $HOME/bin/config.guess"
 else
