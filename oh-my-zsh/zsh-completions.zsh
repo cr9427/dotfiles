@@ -12,7 +12,11 @@ fi
 fpath=($ZSH_CUSTOM/completions $fpath)
 
 # Enable the completion system
-autoload compinit
+autoload -Uz compinit
 
 # Initialize all completions on $fpath and ignore (-i) all insecure files and directories
 compinit -i
+
+# Case insensitive.
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
