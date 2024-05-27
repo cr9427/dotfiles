@@ -112,6 +112,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   z
+  zsh-you-should-use
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -1,8 +1,12 @@
 # set hostname to $HOST
 #
 echo ""
+
 export HOST=`hostname -s`
 echo "HOST:    $HOST"
+
+export arch_name="$(uname -m)"
+echo "ARCH:    $arch_name"
 
 # determine OS
 #
@@ -24,3 +28,14 @@ echo  "home:    $HOME"
 #
 echo "shell:   $SHELL"
 echo
+
+export EDITOR=vim
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+
+# Nicer prompt.
+# export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+PS1=$'%{\e[0;33m%}%n@%{\e[0;33m%}%B%m%b%{\e[0;33m%}[%{\e[0m%}%~%{\e[0;33m%}]%{\e[0;33m%}%(!.#.>)%{\e[0m%} '
+RPS1=$'%{\e[0;33m%}(%{\e[0m%}%?%{\e[0;33m%})%T%{\e[0m%}'
+export PS1 RPS1
