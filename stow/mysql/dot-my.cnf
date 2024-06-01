@@ -1,0 +1,15 @@
+[Client]
+password
+user=root
+default-character-set=utf8mb4
+port=3306
+ssl
+
+[mysql]
+default-character-set=utf8mb4
+
+
+[mysqld]
+collation-server = utf8mb4_unicode_520_ci
+init-connect='SET NAMES utf8mb4'
+character-set-server = utf8mb4
