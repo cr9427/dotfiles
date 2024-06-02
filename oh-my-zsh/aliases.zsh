@@ -4,7 +4,7 @@ if [ -f $HOME/.aliases ]; then
    . $HOME/.aliases
 fi
 
-alias ll='ls -lFh --color'
+alias ll='ls -lFh'
 alias sa='alias | fzf'
 alias se='printenv | fzf'
 alias s=sudo
