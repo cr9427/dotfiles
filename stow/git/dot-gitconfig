@@ -1,6 +1,8 @@
 [user]
   name = Holm der Kannenzwerg
   email = hk@crylle.net
+[color]
+	ui = true
 [core]
   editor = vi
 	excludesFile = ~/.gitignore
@@ -30,9 +32,17 @@
   d = diff
   dc = diff --cached
   l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
+  # F*ck the police
+	wip = commit --amend --no-edit --reset-author --no-verify
+
 [pull]
 	rebase = true
 [diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  # Display submodule-related information (commit listings)
 	submodule = log
 [status]
 	submodulesummary = 1
