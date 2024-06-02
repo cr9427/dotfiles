@@ -189,12 +189,16 @@
 			<false/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.20000000000000001</real>
+				<key>Color Space</key>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.20000000000000001</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.20000000000000001</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -203,7 +207,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>5</real>
+			<real>10</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -248,6 +252,8 @@
 			<key>Description</key>
 			<string>Default</string>
 			<key>Disable Window Resizing</key>
+			<true/>
+			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Flashing Bell</key>
 			<true/>
@@ -790,7 +796,7 @@
 			<key>Title Components</key>
 			<integer>1411</integer>
 			<key>Transparency</key>
-			<real>0.29999999999999999</real>
+			<real>0.20000000000000001</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -870,5 +876,9 @@
 	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
