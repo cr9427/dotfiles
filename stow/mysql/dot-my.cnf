@@ -1,4 +1,4 @@
-[Client]
+[client]
 password
 user=root
 default-character-set=utf8mb4
