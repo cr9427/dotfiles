@@ -5,6 +5,9 @@ else
   eval "$(dircolors)"
 fi
 
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
 export LS_OPTIONS='--color=auto'
 alias ls='ls $LS_OPTIONS'
 

@@ -16,7 +16,7 @@ fi
 if [ x$OS = x ]; then
         echo "OS:      not detectable ... update $HOME/bin/config.guess"
 else
-        echo "OS       $OS"
+        echo "OS:      $OS"
         export OS
 fi
 
@@ -30,9 +30,6 @@ echo "shell:   $SHELL"
 echo
 
 export EDITOR=vim
-unset LSCOLORS
-export CLICOLOR=1
-export CLICOLOR_FORCE=1
 
 # Nicer prompt.
 # export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
