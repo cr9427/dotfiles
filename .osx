@@ -78,6 +78,17 @@ defaults write com.apple.menuextra.clock ShowSeconds  -int 1
 
 # Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Disable Icons on Desktop
+defaults write com.apple.WindowManager StandardHideDesktopIcons -int 1
+
+# Disable Click on Desktop to show them
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -int 0
+
+# Disable Widgets
+defaults write com.apple.WindowManager StageManagerHideWidgets -int 1
+defaults write com.apple.WindowManager StandardHideWidgets -int 1
+
 ###############################################################################
 # Screensaver                                                                 #
 ###############################################################################
@@ -133,7 +144,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
