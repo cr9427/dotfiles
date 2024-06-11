@@ -724,7 +724,7 @@
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Password Manager Automatically</key>
-			<false/>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -760,7 +760,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Show Timestamps</key>
 			<integer>2</integer>
 			<key>Silence Bell</key>
@@ -796,13 +796,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.25685083866119385</real>
+									<real>0.63590961694717407</real>
 									<key>Color Space</key>
 									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.26314079761505127</real>
+									<real>0.6414334774017334</real>
 									<key>Red Component</key>
-									<real>0.46736389398574829</real>
+									<real>0.86000317335128784</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -834,13 +834,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.27846461534500122</real>
+									<real>0.65540963411331177</real>
 									<key>Color Space</key>
 									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.49482804536819458</real>
+									<real>0.89377599954605103</real>
 									<key>Red Component</key>
-									<real>0.34275767207145691</real>
+									<real>0.72450786828994751</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -872,13 +872,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.48745501041412354</real>
+									<real>0.8851432204246521</real>
 									<key>Color Space</key>
 									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.33745688199996948</real>
+									<real>0.72423571348190308</real>
 									<key>Red Component</key>
-									<real>0.26861107349395752</real>
+									<real>0.64865356683731079</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -910,13 +910,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.379524827003479</real>
+									<real>0.76881867647171021</real>
 									<key>Color Space</key>
 									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.26313775777816772</real>
+									<real>0.64143049716949463</real>
 									<key>Red Component</key>
-									<real>0.4673653244972229</real>
+									<real>0.86000508069992065</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>

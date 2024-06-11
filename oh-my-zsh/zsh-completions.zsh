@@ -1,3 +1,5 @@
+export ZSH_COMPDUMP=$HOME/.cache/zcompdump.`hostname -s`
+
 # if we are on Ubuntu with zsh installed
 if [ -d  /usr/share/zsh/vendor-completions ]; then
   fpath=(/usr/share/zsh/vendor-completions $fpath)
@@ -12,13 +14,15 @@ fi
 fpath=($ZSH_CUSTOM/completions $fpath)
 
 # Enable the completion system
-autoload -Uz compinit
-
-# Initialize all completions on $fpath and ignore (-i) all insecure files and directories
-compinit -i
+autoload -Uz compinit && compinit
 
 # Case insensitive.
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # completion menus will look very nice
-zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+

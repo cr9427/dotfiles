@@ -107,6 +107,7 @@ plugins=(
   # tmux
   # vagrant
   wakeonlan
+  web-search
   zsh-interactive-cd
   #zsh-autocomplete
   zsh-autosuggestions
