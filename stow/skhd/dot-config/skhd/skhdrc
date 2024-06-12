@@ -1,0 +1,55 @@
+# see: https://www.josean.com/posts/yabai-setup
+# also:
+#   https://github.com/koekeishiya/skhd
+#
+# brew install koekeishiya/formulae/skhd
+# skhd --start-service
+# skhd --restart-service
+#
+# add an on_enter command to the default mode
+:: default : yabai -m config active_window_border_color 0xff775759
+#
+# defines a new mode 'test' with an on_enter command, that captures keypresses
+:: test @ : yabai -m config active_window_border_color 0xff24ccaa
+
+## change window focus within space
+alt - down : yabai -m window --focus south
+alt - up : yabai -m window --focus north
+alt - left : yabai -m window --focus west
+alt - right : yabai -m window --focus east
+
+#change focus between external displays (left and right)
+alt - s: yabai -m display --focus west
+alt - g: yabai -m display --focus east
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+# flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+# flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+# toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# swap windows
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - h : yabai -m window --swap west
+shift + alt - l : yabai -m window --swap east
+
+# move window and split
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - l : yabai -m window --warp east
+
+# maximize a window
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out tree of windows (resize to occupy same area)
+shift + alt - e : yabai -m space --balance
+
+# rotate windows in a space
+fn + ctrl - rigth : yabai_cycle_clockwise.sh
+fn + ctrl - left : yabai_cycle_counterclockwise.sh
+

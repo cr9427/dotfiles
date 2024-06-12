@@ -21,3 +21,7 @@ alias unstowth='stow --dotfiles --verbose --delete --target ~/'
 #
 alias reboot='sudo shutdown -r now'
 alias halt='sudo shutdown -h now'
+
+alias yrc='vim ~/.config/yabai/yabairc'
+alias src='vim ~/.config/skhd/skhdrc'
+alias zrc='vim ~/.zshrc'
