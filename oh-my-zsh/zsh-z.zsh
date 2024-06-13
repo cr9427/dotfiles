@@ -5,7 +5,7 @@
 #ZSHZ_CD specifies the default directory-changing command (default: builtin cd)
 #ZSHZ_COMPLETION can be 'frecent' (default) or 'legacy', depending on whether you want your completion results sorted according to frecency or simply sorted alphabetically
 #ZSHZ_DATA changes the database file (default: ~/.z)
-export ZSHZ_DATA=~/.cache/zsh-z
+export ZSHZ_DATA=~/.cache/zsh-z.`hostname -s`
 
 #ZSHZ_ECHO displays the new path name when changing directories (default: 0)
 #ZSHZ_EXCLUDE_DIRS is an array of directories to keep out of the database (default: empty)

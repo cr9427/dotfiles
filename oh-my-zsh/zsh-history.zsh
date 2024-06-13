@@ -1,8 +1,8 @@
-if [ ! -d $HOME/.history ]; then
-  mkdir $HOME/.history
+if [ ! -d $HOME/.cache ]; then
+  mkdir $HOME/.cache
 fi
 
-HISTFILE=~/.history/`hostname -s`
+HISTFILE=~/.cache/zhistory.`hostname -s`
 HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase

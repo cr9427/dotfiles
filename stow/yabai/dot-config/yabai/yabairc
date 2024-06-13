@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+#
 # see: https://www.josean.com/posts/yabai-setup
 # also:
 #   https://github.com/koekeishiya/yabai
@@ -8,6 +10,23 @@
 # yabai --start-service
 # yabai --restart-service
 #
+# necessary to load scripting-addition during startup on macOS Big Sur
+# *yabai --load-sa* is configured to run through sudo without a password
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# mission-control desktop labels
+yabai -m space 1 --label web
+yabai -m space 2 --label work
+yabai -m space 3 --label mail
+yabai -m space 4 --label notes
+yabai -m space 5 --label etc
+
+# window rules
+yabai -m rule --add app="^Mail$" space=mail manage=on
+yabai -m rule --add app="^Safari$" space=^web
+yabai -m rule --add app="^Firefox$" space=^web
+
 # default layout (can be bsp, stack or float)
 yabai -m config layout bsp
 
